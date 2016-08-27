@@ -4,30 +4,20 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('layout.html',
-                            title="Home",
-                            content_body="TEST")
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
-    return render_template('layout.html',
-                            title="About",
-                            content_body="ABOUT TEST")
+    return render_template('about.html')
 
 @app.route('/resume')
 def resume():
-    return render_template('layout.html',
-                            title="Resume",
-                            content_body="RESUME TEST")
+    return render_template('resume.html')
 
 @app.route('/projects')
 def projects():
-    return render_template('layout.html',
-                            title="Projects",
-                            content_body="PROJ TEST")
+    return render_template('projects.html')
 
 @app.route('/contact')
 def contact():
-    return render_template('layout.html',
-                            title="Contact Information",
-                            content_body="CONTACT TEST")
+    return render_template('contact.html')
