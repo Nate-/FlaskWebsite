@@ -4,6 +4,21 @@
     Home
 {% endblock %}
 
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cover.css') }}">
+{% endblock %}
+
 {% block content %}
-    index content
+    <div class="cover-container">
+        <div class="cover">
+            <h1 class="cover-heading">{ Nathaniel Quan : Software Engineer }</h1>
+            <p class="lead">
+                <a href="{{ url_for('about') }}">Who I am</a>
+                &nbsp;|&nbsp;
+                <a href="{{ url_for('resume') }}">Work Experience</a>
+                &nbsp;|&nbsp;
+                <a href="{{ url_for('contact') }}">Connect with me</a>
+            </p>
+        </div>
+    </div>
 {% endblock %}
