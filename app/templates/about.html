@@ -4,6 +4,47 @@
     About 
 {% endblock %}
 
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">
+{% endblock %}
+
 {% block content %}
-    About content
+    <div class="content-body">
+        <h1 class="center"> Who am I? </h1>
+        
+        <section>
+            <h2> Quick Summary </h2>
+            <p>Blurb</p>
+        </section>
+
+        <section>
+            <h2> Education </h2>
+            <p class="bold">University of Hawaii at Hilo<br/>
+            <span class="italics">Bachelor of Science, Computer Science, 2014</span></p>
+            
+            <p class="bold"> Coursework </p>
+            <ul class="two-col">
+                <li>Software Engineering</li>
+                <li>Compiler Theory</li>
+                <li>Operating Systems</li>
+                <li>Theory of Computing</li>
+                <li>Computer Architecture</li>
+                <li>Artificial Intelligence</li>
+                <li>Database Internals</li>
+                <li>Database Systems</li>
+                <li>Organization of Programming Languages</li>
+            </ul>
+        </section>        
+    
+        <section>
+            <h2> Volunteer </h2>
+            <p class="bold"> Pinole Middle School Math Club, Asst. Coach </p>
+            <p>Desc</p>
+        </section>
+
+        <section>
+            <h2> Hobbies </h2>
+            <p> Desc </p>
+        </section>
+    <div>
 {% endblock %}
