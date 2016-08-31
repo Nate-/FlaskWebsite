@@ -4,6 +4,25 @@
     Resume
 {% endblock %}
 
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">
+{% endblock %}
+
 {% block content %}
-    Resume content
+    <div class="content-body">
+        <h1 class="center"> Work Experience </h1>
+        {% for i in exp %}
+            <div class="row">
+                <div class="col-md-4">
+                     <img src="{{ url_for('static', filename='img/'+i.logo) }}" alt="{{ i.company }} logo" class="img-responsive logo">
+                </div><!--./col-md-4-->
+                <div class="col.md-8">
+                    <span class="bold"> Company: {{ i.company }} </span><br/>
+                    <span class="italics"> Position: {{ i.position }} </span><br/>
+                    <p>Desc: {{ i.desc }}</p>
+                </div><!--./col-md-8-->
+            </div><!--./row-->
+        {% endfor %}
+        </section>
+    </div>
 {% endblock %}
