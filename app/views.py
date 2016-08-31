@@ -1,5 +1,6 @@
 from flask import url_for, render_template
 from app import app
+from exp import Exp
 
 @app.route('/')
 @app.route('/index')
@@ -12,7 +13,21 @@ def about():
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.html')
+    experience = []
+    experience.append(Exp("dolby.png",
+                            "Dolby Laboratories, Inc.",
+                            "Software Engineer",
+                            "VR"))
+    experience.append(Exp("ulukau.png",
+                            "Ulukau: The Hawaiian Electronic Library",
+                            "Software Engineer",
+                            "Frontend"))
+    experience.append(Exp("uhh.png",
+                            "University of Hawaii at Hilo",
+                            "Electrical Engineer, Intern",
+                            "Research"))
+    return render_template('resume.html',
+                            exp = experience)
 
 @app.route('/projects')
 def projects():
