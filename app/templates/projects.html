@@ -1,9 +1,19 @@
-{% extends "layout.html" %}
+{% extends "general.html" %}
 
 {% block title %}
     Projects
 {% endblock %}
 
+{% block css %}
+    {{ super() }}
+{% endblock %}
+
+
 {% block content %}
-    Projects content
+    <div class="content-body">
+        <h1 class="center"> Pet projects </h1>
+        {% for i in proj %}
+
+        {% endfor %}
+    </div><!--./content-body-->
 {% endblock %}
