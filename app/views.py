@@ -71,7 +71,7 @@ def projects():
                         in used a MySQL database and filled a PHP template with SQL queries to aggregate statistics into a \
                         sorted table to summarize based on statistics that e-sports enthusiasts care about, such as KDA, etc.",
                         ["SQL", "PHP", "HTML", "JavaScript", "CSS"]))
-    return render_template('projects.html')
+    return render_template('projects.html', proj=proj)
 
 @app.route('/contact')
 def contact():
