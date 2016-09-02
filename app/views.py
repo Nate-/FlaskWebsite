@@ -16,7 +16,8 @@ def about():
     """
     Serves About page
     """
-    return render_template('about.html')
+    return render_template('about.html',
+                            pageHeader="About")
 
 @app.route('/resume')
 def resume():
@@ -41,6 +42,7 @@ def resume():
                             ["Research", "Paragraph2"],
                             []))
     return render_template('resume.html',
+                            pageHeader="Resume",
                             exp = experience)
 
 @app.route('/projects')
@@ -71,4 +73,6 @@ def projects():
                         in used a MySQL database and filled a PHP template with SQL queries to aggregate statistics into a \
                         sorted table to summarize based on statistics that e-sports enthusiasts care about, such as KDA, etc.",
                         ["SQL", "PHP", "HTML", "JavaScript", "CSS"]))
-    return render_template('projects.html', proj=proj)
+    return render_template('projects.html', 
+                            pageHeader="Projects",
+                            proj=proj)
