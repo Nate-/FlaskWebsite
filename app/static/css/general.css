@@ -35,3 +35,12 @@
     border-color: darkorange;
     border-width: 3px; 
 }
+
+.tags {
+    list-style: none;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
