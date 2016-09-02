@@ -11,14 +11,20 @@
 
 {% block contentBody %}
     {% for i in proj %}
-        <section>
-        <span class="bold">{{ i.name }}</span>
-        <span class="italics"><a href="{{ i.link }}">&nbsp;(Code)&nbsp;</a></span><br/>
-        {{ i.desc }} <br/>
-            {% for tag in i.tags %}
-            <span class="label label-default">{{ tag }}</span>
-            {% endfor %}
-        </section>
+        <div class="row row-eq-height">
+            <div class="col-md-4">
+            <span class="bold">{{ i.name }}</span><br/>
+            <span class="italics">(<a href="{{ i.link }}">Code</a>)</span>
+            <br/><br/>
+            </div>
+        
+            <div class="col-md-8">
+                {{ i.desc }} <br/>
+                {% for tag in i.tags %}
+                <span class="label label-default">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        </div>
     {% endfor %}
         
 {% endblock %}
