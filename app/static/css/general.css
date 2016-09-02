@@ -25,7 +25,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     color: white;
-    padding-left: 3em;
+    width: 80%;
 }  
 
 .logo {
@@ -41,6 +41,11 @@
 }
 
 .title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
+
+.pad-top {
+    padding-top: 0.5em;
+}
+
