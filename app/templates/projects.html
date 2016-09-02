@@ -9,19 +9,16 @@
 {% endblock %}
 
 
-{% block content %}
-    <div class="content-body">
-        <h1 class="center"> Pet projects </h1>
-        {% for i in proj %}
-            <span class="bold">{{ i.name }}</span>
-            <span class="italics"><a href="{{ i.link }}">&nbsp;(Code)&nbsp;</a></span><br/>
-            {{ i.desc }} <br/>
-            <ul class="tags">
-                {% for tag in i.tags %}
-                <li>{{ tag }}</li>
-                {% endfor %}
-            </ul>
-
-        {% endfor %}
-    </div><!--./content-body-->
+{% block contentBody %}
+    {% for i in proj %}
+        <span class="bold">{{ i.name }}</span>
+        <span class="italics"><a href="{{ i.link }}">&nbsp;(Code)&nbsp;</a></span><br/>
+        {{ i.desc }} <br/>
+        <ul class="tags">
+            {% for tag in i.tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+        
 {% endblock %}

@@ -8,10 +8,7 @@
     {{ super() }}
 {% endblock %}
 
-{% block content %}
-    <div class="content-body">
-        <h1 class="center"> Who am I? </h1>
-        
+{% block contentBody %}
         <section>
             <h2> Quick Summary </h2>
             <p>Blurb</p>
@@ -19,7 +16,7 @@
 
         <section>
             <h2> Education </h2>
-            <p class="title">University of Hawaii at Hilo<br/>
+            <p class><span class="title">University of Hawaii at Hilo</span><br/>
             <span class="italics">Bachelor of Science, Computer Science, 2014</span></p>
             
             <p class="bold"> Coursework </p>
@@ -53,5 +50,4 @@
             <h2> Hobbies </h2>
             <p> Desc </p>
         </section>
-    <div>
 {% endblock %}
