@@ -9,12 +9,14 @@
 {% endblock %}
 
 {% block contentBody %}
+
+    <div>
     {% for i in exp %}
         <div class="row row-eq-height">
-            <div class="col-md-4">
-                 <img src="{{ url_for('static', filename='img/'+i.logo) }}" alt="{{ i.company }} logo" class="img-responsive logo">
-                <span class="bold"> Company: {{ i.company }} </span><br/>
-                <span class="italics"> Position: {{ i.position }} </span><br/>                 
+            <div class="col-md-4 center">
+                <img src="{{ url_for('static', filename='img/'+i.logo) }}" alt="{{ i.company }} logo" class="img-responsive logo">
+                <span class="bold">{{ i.company }}</span><br/>
+                <span class="italics">{{ i.position }}</span><br/><br/>              
             </div><!--./col-md-4-->
             <div class="col-md-8">
                 {% for paragraph in i.desc %}
@@ -27,4 +29,5 @@
             </div><!--./col-md-8-->
         </div><!--./row-->
     {% endfor %}
+    </div>
 {% endblock %}
