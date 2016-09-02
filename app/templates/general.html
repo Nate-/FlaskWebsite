@@ -4,3 +4,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">
 {% endblock %}
 
+{% block content %}
+    <div class="content-body">
+        <div class="page-header center clear-padding pad-top">
+            <h1>{{ pageHeader }} <small> {{headerSubtext }} </small></h1>
+        </div>
+
+        {% block contentBody %}{% endblock %}
+    </div>
+{% endblock %}
