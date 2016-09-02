@@ -11,14 +11,12 @@
 {% block content %}
     <div class="cover-container">
         <div class="cover">
-            <h1 class="cover-heading">{ Nathaniel Quan : Software Engineer }</h1>
-            <p class="lead">
-                <a href="{{ url_for('about') }}">Who I am</a>
-                &nbsp;|&nbsp;
-                <a href="{{ url_for('resume') }}">Work Experience</a>
-                &nbsp;|&nbsp;
-                <a href="{{ url_for('contact') }}">Connect with me</a>
-            </p>
+            <h1 class="cover-heading">{ Nathaniel Quan :<br class="break-sm" /> Software Engineer }</h1>
+            <div class="lead">
+                <a href="{{ url_for('about') }}" class="btn btn-default">Who I am</a>
+                <a href="{{ url_for('resume') }}" class="btn btn-default">Work Experience</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-default">Connect with me</a>
+            </div>
         </div>
     </div>
 {% endblock %}
