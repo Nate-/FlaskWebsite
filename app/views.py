@@ -72,10 +72,3 @@ def projects():
                         sorted table to summarize based on statistics that e-sports enthusiasts care about, such as KDA, etc.",
                         ["SQL", "PHP", "HTML", "JavaScript", "CSS"]))
     return render_template('projects.html', proj=proj)
-
-@app.route('/contact')
-def contact():
-    """
-    Serves the contact page
-    """
-    return render_template('contact.html')
