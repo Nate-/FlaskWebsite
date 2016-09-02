@@ -11,14 +11,14 @@
 
 {% block contentBody %}
     {% for i in proj %}
+        <section>
         <span class="bold">{{ i.name }}</span>
         <span class="italics"><a href="{{ i.link }}">&nbsp;(Code)&nbsp;</a></span><br/>
         {{ i.desc }} <br/>
-        <ul class="tags">
             {% for tag in i.tags %}
-            <li>{{ tag }}</li>
+            <span class="label label-default">{{ tag }}</span>
             {% endfor %}
-        </ul>
+        </section>
     {% endfor %}
         
 {% endblock %}

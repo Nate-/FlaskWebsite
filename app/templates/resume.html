@@ -13,18 +13,17 @@
         <div class="row row-eq-height">
             <div class="col-md-4">
                  <img src="{{ url_for('static', filename='img/'+i.logo) }}" alt="{{ i.company }} logo" class="img-responsive logo">
+                <span class="bold"> Company: {{ i.company }} </span><br/>
+                <span class="italics"> Position: {{ i.position }} </span><br/>                 
             </div><!--./col-md-4-->
             <div class="col-md-8">
-                <span class="bold"> Company: {{ i.company }} </span><br/>
-                <span class="italics"> Position: {{ i.position }} </span><br/>
                 {% for paragraph in i.desc %}
-                    <p>Desc: {{ paragraph }}</p>
+                    <p>{{ paragraph }}</p>
                 {% endfor %}
-                <ul class = "tags">
-                    {% for techs in i.techs %}
-                    <li>{{ techs }}</li>
-                    {% endfor %}
-                </ul>
+                
+                {% for techs in i.techs %}
+                <span class="label label-default">{{ techs }}</span>
+                {% endfor %}
             </div><!--./col-md-8-->
         </div><!--./row-->
     {% endfor %}
