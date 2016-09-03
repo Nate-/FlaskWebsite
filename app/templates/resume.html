@@ -12,7 +12,7 @@
 
     <div>
     {% for i in exp %}
-        <div class="row row-eq-height">
+        <div class="row row-eq-height pad-top">
             <div class="col-md-4 center">
                 <img src="{{ url_for('static', filename='img/'+i.logo) }}" alt="{{ i.company }} logo" class="img-responsive logo">
                 <span class="bold">{{ i.company }}</span><br/>
