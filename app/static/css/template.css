@@ -9,3 +9,9 @@ html {
 body {
     padding-top: 50px;
 }
+
+.icon {
+     fill: red;
+     width: 32px;
+     height: 32px;
+}
