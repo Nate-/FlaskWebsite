@@ -12,9 +12,19 @@
     <div class="cover-container">
         <div class="cover">
             <h1 class="cover-heading">{ Nathaniel Quan :<br class="break-sm" /> Software Engineer }</h1>
+            
             <div style="margin:auto; padding-top:0.5em; padding-bottom: 0.5em">
-                <a href="{{ url_for('about') }}" class="btn btn-primary">Learn More</a>
+                <a href="{{ url_for('about') }}" class="btn btn-primary">Learn More</a><br/>
+            </div>
+                
+            <div style="margin:auto; padding-top:0.5em; padding-bottom: 0.5em">
+                <a href="https://www.linkedin.com/in/nathanielquan"><svg class="icon"><use xlink:href="#LinkedIn" /></svg></a>
+                <a href="https://github.com/nate-"><svg class="icon"><use xlink:href="#Github" /></svg></a>
+                <a href="mailto:nnq@hawaii.edu"><svg class="icon"><use xlink:href="#e-mail" /></svg></a>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block footer %}
 {% endblock %}
