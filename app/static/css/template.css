@@ -1,5 +1,6 @@
 html {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
+    /*background: url(../img/bg.jpg) no-repeat center center fixed;*/
+    background: url(https://static.pexels.com/photos/6598/coffee-desk-laptop-notebook-large.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,4 +15,8 @@ body {
      fill: red;
      width: 32px;
      height: 32px;
+}
+
+.footer {
+    padding-top: 0.5em;
 }

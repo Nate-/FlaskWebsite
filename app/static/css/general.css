@@ -22,7 +22,8 @@
 .content-body {
     margin-right: auto;
     margin-left: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    background-color: rgba(81,87,95,0.8);
     border-radius: 25px;
     color: white;
     width: 80%;
@@ -32,16 +33,29 @@
 .logo {
     margin: auto;
     background-color: white;
-    border-style: ridge;
-    border-color: darkorange;
-    border-width: 3px; 
+    border-style: outset;
+    border-color: darkgray;
+    border-width: 5px; 
 }
 
 .title {
+    font-family: 'Slabo 27px', serif;
     font-size: 1.5em;
+    font-weight: bolder;
+    color: #5ECCD1;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    font-style: italic;
     font-weight: bold;
 }
 
 .pad-top:not(:first-child) {
     padding-top: 2em;
+}
+
+.pageHeader {
+    color: #B1C120;
+    
 }
