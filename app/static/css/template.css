@@ -11,6 +11,10 @@ body {
     padding-top: 50px;
 }
 
+p {
+    text-indent: 50px;
+}
+
 .icon {
      fill: red;
      width: 32px;
