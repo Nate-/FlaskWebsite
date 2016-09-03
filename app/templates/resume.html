@@ -15,8 +15,8 @@
         <div class="row row-eq-height pad-top">
             <div class="col-md-4 center">
                 <img src="{{ url_for('static', filename='img/'+i.logo) }}" alt="{{ i.company }} logo" class="img-responsive logo">
-                <span class="bold">{{ i.company }}</span><br/>
-                <span class="italics">{{ i.position }}</span><br/><br/>              
+                <div class="title">{{ i.company }}</div>
+                <div class="subtitle">{{ i.position }}</span></div><br/>              
             </div><!--./col-md-4-->
             <div class="col-md-8">
                 {% for paragraph in i.desc %}
