@@ -57,5 +57,31 @@
 
 .pageHeader {
     color: #B1C120;
-    
+}
+
+.selfie {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: red;
+}
+
+svg.projLink {
+   fill: red;
+   height: 1em;
+   width: 1em;
+}
+
+.btn-success > a {
+    color: red;
+    background-color: transparent;
+    border-color: red;
+    border-width: medium;
+}
+
+.btn-success:focus > a
+.btn-success:active > a,
+.btn-success:hover > a {
+    font-size: 1.1em;    
 }
